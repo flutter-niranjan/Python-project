@@ -7,6 +7,19 @@ billnumber=random.randint(500,1000)
 if not os.path.exists('bills'):
     os.mkdir('bills')
 
+
+def search_bill():
+    for i in os.listdir('bills/'):
+        if i.split('.')[0]==billNumberEntry.get():
+            f=open(f'bills/{i}','r')
+            textarea.delete(1.0,END)
+            for data in f:
+                textarea.insert(END,data)
+            f.close()
+            break
+    else:
+        messagebox.showerror("Error",'Invalid Bill Number')
+
 def save_bill():
     global billnumber
     result=messagebox.askyesno("Confirm","Do you want to save the bill")
@@ -175,7 +188,7 @@ billnumberLabel.grid(row=0,column=4,padx=20,pady=2)
 billNumberEntry=Entry(customer_details_frame,font=('arial',15),bd=7,width=18)
 billNumberEntry.grid(row=0,column=5,padx=8)
 
-searchButton=Button(customer_details_frame,text='SEARCH',font=('arial',12,'bold'),bd=7,width=10)
+searchButton=Button(customer_details_frame,text='SEARCH',font=('arial',12,'bold'),bd=7,width=10,command=search_bill)
 searchButton.grid(row=0,column=6,padx=20,pady=8)
 
 productsFrame=Frame(root)

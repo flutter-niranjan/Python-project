@@ -1,0 +1,30 @@
+*		*WELCOME CUSTOMER**
+
+
+Bill Number: 677
+
+Customer Name: Sahil
+
+Customer Phone number: 1234567890
+
+=======================================================
+Product			Quantity			Price
+=======================================================
+
+Bath Soap			1			20 Rs
+Hair Spray			5			400 Rs
+FaceCream			2			100 Rs
+Face Wash			1			100 Rs
+Daal			2			200 Rs
+Suger			5			700 Rs
+Pepsi			6			120 Rs
+Dew			3			60 Rs
+------------------------------------------------------
+
+Cosmetic Tax				74.39999999999999 Rs
+Grocery Tax				45.0 Rs
+Drinks Tax				14.4 Rs
+
+Total bill				1833.8000000000002
+=======================================================
+
