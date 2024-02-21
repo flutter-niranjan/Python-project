@@ -1,0 +1,34 @@
+*		*WELCOME CUSTOMER**
+
+
+Bill Number: 623
+
+Customer Name: niranjan
+
+Customer Phone number: 9022394022
+
+=======================================================
+Product			Quantity			Price
+=======================================================
+
+Bath Soap			1			20 Rs
+Hair Gel			1			150 Rs
+FaceCream			2			100 Rs
+Face Wash			1			100 Rs
+body Lotion			2			150 Rs
+Rice			1			30 Rs
+Oil			1			120 Rs
+Wheat			2			100 Rs
+Suger			2			280 Rs
+Mazza			2			40 Rs
+Sprite			2			0 Rs
+Frooti			4			80 Rs
+------------------------------------------------------
+
+Cosmetic Tax				58.8 Rs
+Grocery Tax				26.5 Rs
+Drinks Tax				12.8 Rs
+
+Total bill				1278.1
+------------------------------------------------------
+

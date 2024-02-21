@@ -1,0 +1,25 @@
+*		*WELCOME CUSTOMER**
+
+
+Bill Number: 967
+
+Customer Name: sdgf
+
+Customer Phone number: fdg
+
+=======================================================
+Product			Quantity			Price
+=======================================================
+
+Bath Soap			1			20 Rs
+Wheat			2			100 Rs
+Frooti			3			60 Rs
+------------------------------------------------------
+
+Cosmetic Tax				2.4 Rs
+Grocery Tax				5.0 Rs
+Drinks Tax				4.8 Rs
+
+Total bill				192.20000000000002
+------------------------------------------------------
+
