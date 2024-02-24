@@ -1,0 +1,25 @@
+		**WELCOME CUSTOMER**
+
+
+Bill Number: 710
+
+Customer Name: Uday
+
+Customer Phone number: 9876543210
+
+=======================================================
+Product			Quantity			Price
+=======================================================
+
+Bath Soap			1			20 Rs
+Hair Gel			1			150 Rs
+Mazza			1			20 Rs
+CocaCola			1			20 Rs
+------------------------------------------------------
+
+Cosmetic Tax				20.4 Rs
+Drinks Tax				3.2 Rs
+
+Total bill				233.6
+=======================================================
+

@@ -1,12 +1,81 @@
 from tkinter import *
 from tkinter import messagebox
-import random,os
+import random,os,tempfile
 
 billnumber=random.randint(500,1000)
 
 if not os.path.exists('bills'):
     os.mkdir('bills')
 
+
+def clear():
+
+    bathsoapEntry.delete(0,END)
+    facecreamEntry.delete(0,END)
+    hairsprayEntry.delete(0,END)
+    hairgelEntry.delete(0,END)
+    bodylotionEntry.delete(0,END)
+    facewashEntry.delete(0,END)
+
+    daalEntry.delete(0,END)
+    wheatEntry.delete(0,END)
+    riceEntry.delete(0,END)
+    oilEntry.delete(0,END)
+    sugarEntry.delete(0,END)
+    teaEntry.delete(0,END)
+
+    pepsiEntry.delete(0,END)
+    cocacolaEntry.delete(0,END)
+    mazzaEntry.delete(0,END)
+    dewEntry.delete(0,END)
+    spritEntry.delete(0,END)
+    frootiEntry.delete(0,END)
+
+    bathsoapEntry.insert(0,0)
+    facecreamEntry.insert(0,0)
+    hairsprayEntry.insert(0,0)
+    hairgelEntry.insert(0,0)
+    bodylotionEntry.insert(0,0)
+    facewashEntry.insert(0,0)
+
+    daalEntry.insert(0,0)
+    wheatEntry.insert(0,0)
+    riceEntry.insert(0,0)
+    oilEntry.insert(0,0)
+    sugarEntry.insert(0,0)
+    teaEntry.insert(0,0)
+
+    pepsiEntry.insert(0,0)
+    cocacolaEntry.insert(0,0)
+    mazzaEntry.insert(0,0)
+    dewEntry.insert(0,0)
+    spritEntry.insert(0,0)
+    frootiEntry.insert(0,0)
+    
+    cosmetictaxEntry.delete(0,END)
+    grocerytaxEntry.delete(0,END)
+    drinkstaxEntry.delete(0,END)
+    
+    cosmeticpriceEntry.delete(0,END)
+    grocerypriceEntry.delete(0,END)
+    drinkspriceEntry.delete(0,END)
+
+    nameEntry.delete(0,END)
+    phoneEntry.delete(0,END)
+    billNumberEntry.delete(0,END)
+
+    textarea.delete(1.0,END)
+
+
+
+
+def print_bill():
+    if textarea.get(1.0,END)=="\n":
+        messagebox.showerror("Error","Bill is Empty")
+    else:
+        file=tempfile.mktemp('.txt')
+        open(file,'w').write(textarea.get(1.0,END))
+        os.startfile(file,'print')
 
 def search_bill():
     for i in os.listdir('bills/'):
@@ -95,7 +164,7 @@ def bill_area():
         
     else:
         textarea.delete(1.0,END)
-        textarea.insert(END,"*\t\t*WELCOME CUSTOMER**\n\n")
+        textarea.insert(END,"\t\t**WELCOME CUSTOMER**\n\n")
         textarea.insert(END,f"\nBill Number: {billnumber}\n")
         textarea.insert(END,f"\nCustomer Name: {nameEntry.get()}\n")
         textarea.insert(END,f"\nCustomer Phone number: {phoneEntry.get()}\n")
@@ -156,7 +225,7 @@ def bill_area():
         
         textarea.insert(END,'\n=======================================================\n')
 
-        save_bill()
+        # save_bill()
 
 
 root=Tk()
@@ -345,7 +414,7 @@ scrollbar.config(command=textarea.yview)
 
 billmenuFrame=LabelFrame(root,text='Bill Menu',font=('times new roman',15,'bold'),bg='lightcyan3',fg='dark slate gray',bd=8,relief=RAISED)
 billmenuFrame.pack()
-0
+
 cosmeticpriceLabel=Label(billmenuFrame,text='Cosmetic Price',font=('times new roman',14,'bold'),bg='lightcyan3',fg='black')
 cosmeticpriceLabel.grid(row=0,column=0,pady=6,padx=10,sticky='w')
 
@@ -383,22 +452,22 @@ drinkstaxEntry=Entry(billmenuFrame,font=('times new roman',14,'bold'),width=10,b
 drinkstaxEntry.grid(row=2,column=3,pady=6,padx=10,sticky='w')
 
 
-buttonframe=Frame(billmenuFrame,bd=8,relief=GROOVE)
+buttonframe=Frame(billmenuFrame,bd=8,relief=RAISED)
 buttonframe.grid(row=0,column=4,rowspan=3)
 
-totalButton=Button(buttonframe,text='Total',font=('arial',16,'bold'),bg='gray20',fg='white',bd=5,width=8,pady=10,command=total)
+totalButton=Button(buttonframe,text='Total',font=('times new roman',16,'bold'),bg='lightcyan3',fg='black',bd=5,width=8,pady=10,command=total)
 totalButton.grid(row=0,column=0,pady=20,padx=5)
 
-billButton=Button(buttonframe,text='Bill',font=('arial',16,'bold'),bg='gray20',fg='white',bd=5,width=8,pady=10,command=bill_area)
+billButton=Button(buttonframe,text='Bill',font=('times new roman',16,'bold'),bg='lightcyan3',fg='black',bd=5,width=8,pady=10,command=bill_area)
 billButton.grid(row=0,column=1,pady=20,padx=5)
 
-emailButton=Button(buttonframe,text='Email',font=('arial',16,'bold'),bg='gray20',fg='white',bd=5,width=8,pady=10)
+emailButton=Button(buttonframe,text='Save Bill',font=('times new roman',16,'bold'),bg='lightcyan3',fg='black',bd=5,width=8,pady=10,command=save_bill)
 emailButton.grid(row=0,column=2,pady=20,padx=5)
 
-printButton=Button(buttonframe,text='Print',font=('arial',16,'bold'),bg='gray20',fg='white',bd=5,width=8,pady=10)
+printButton=Button(buttonframe,text='Print',font=('times new roman',16,'bold'),bg='lightcyan3',fg='black',bd=5,width=8,pady=10,command=print_bill)
 printButton.grid(row=0,column=3,pady=20,padx=5)
 
-clearButton=Button(buttonframe,text='Clear',font=('arial',16,'bold'),bg='gray20',fg='white',bd=5,width=8,pady=10)
+clearButton=Button(buttonframe,text='Clear',font=('times new roman',16,'bold'),bg='lightcyan3',fg='black',bd=5,width=8,pady=10,command=clear)
 clearButton.grid(row=0,column=4,pady=20,padx=5)
 
 root.mainloop()

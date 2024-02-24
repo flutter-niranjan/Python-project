@@ -1,0 +1,32 @@
+		**WELCOME CUSTOMER**
+
+
+Bill Number: 928
+
+Customer Name: niranjan
+
+Customer Phone number: 9022394022
+
+=======================================================
+Product			Quantity			Price
+=======================================================
+
+Bath Soap			12			240 Rs
+FaceCream			2			100 Rs
+Rice			3			90 Rs
+Daal			3			300 Rs
+Oil			3			360 Rs
+Suger			4			560 Rs
+Pepsi			3			60 Rs
+Sprite			1			60 Rs
+Dew			5			100 Rs
+CocaCola			2			40 Rs
+------------------------------------------------------
+
+Cosmetic Tax				40.8 Rs
+Grocery Tax				65.5 Rs
+Drinks Tax				17.6 Rs
+
+Total bill				1993.8999999999999
+=======================================================
+

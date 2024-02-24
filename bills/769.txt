@@ -1,0 +1,30 @@
+		**WELCOME CUSTOMER**
+
+
+Bill Number: 769
+
+Customer Name: Rutuja
+
+Customer Phone number: 9022394022
+
+=======================================================
+Product			Quantity			Price
+=======================================================
+
+Bath Soap			1			20 Rs
+Hair Spray			3			240 Rs
+Face Wash			2			200 Rs
+Oil			4			480 Rs
+Suger			2			280 Rs
+Pepsi			1			20 Rs
+Dew			2			40 Rs
+Frooti			3			60 Rs
+------------------------------------------------------
+
+Cosmetic Tax				55.199999999999996 Rs
+Grocery Tax				38.0 Rs
+Drinks Tax				9.6 Rs
+
+Total bill				1442.8
+=======================================================
+
